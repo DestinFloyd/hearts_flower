@@ -1,0 +1,731 @@
+/* <!-- outterLayer1 to box(boxTop/BoxBottom) (4 petals apiece) to petals to # 1-8 & A-D apiece --> */
+.cover{
+
+    position: absolute; 
+    z-index: 12;
+}
+.textBox{
+    position: absolute;
+    margin-top: 350px;
+    margin-left: 350px;  
+    height: 300px;
+    width: 300px; 
+    display: flex; 
+    align-items: center;
+    justify-content: center;
+    background: lightgreen;
+}
+.outterLayer1{ 
+    margin-top: 300px;
+    margin-left: 100px;
+    height: 400px;
+    width: 800px;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+}
+.box{
+display: flex;
+height: 200px;
+width: 800px;
+position: relative;
+}
+.petals{
+display: flex;
+flex-direction: column;
+height: 200px;
+width: 200px;
+position: relative;
+}
+.petalsMoving1{
+    z-index: 2;
+}
+.petalsMoving2{
+    z-index: 3;
+}
+.petalsBox{
+height: 200px;
+width: 200px;
+display: flex;
+}
+.pieces{
+height: 100px; 
+width: 100px;
+}
+.curveN{
+    background: purple;
+    border-radius: 100px 100px 0px 0px;
+}
+.curveU{
+    background: purple;
+    border-radius: 0px 0px 100px 100px;
+}
+.curveVA{
+    margin: 0;
+    display: flex;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-top: 100px solid purple;
+}
+.curveVB{
+    margin: 0;
+    display: flex;
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-top: 100px solid purple;
+}
+.curveTA{
+    margin: 0;
+    display: flex;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-bottom: 100px solid purple;
+}
+.curveTB{
+    margin: 0;
+    display: flex;
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid purple;
+}
+.pieces5A{
+    background: purple;
+    border-radius: 100px 0px 0px 100px;
+}
+.pieces5B{
+    margin: 0;
+    display: flex;
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-bottom: 100px solid purple;  
+}
+.pieces5C{
+    background: purple;
+    border-radius: 100px 0px 0px 100px;
+}
+.pieces5D{
+    margin: 0;
+    display: flex;
+    width: 0;
+    height: 0;
+    border-right: 100px solid transparent;
+    border-top: 100px solid purple; 
+}
+.pieces4A{
+    margin: 0;
+    display: flex;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-bottom: 100px solid purple; 
+}
+.pieces4B{
+    background: purple;
+    border-radius: 0px 100px 100px 0px;  
+}
+.pieces4C{
+    margin: 0;
+    display: flex;
+    width: 0;
+    height: 0;
+    border-left: 100px solid transparent;
+    border-top: 100px solid purple; 
+    
+}
+.pieces4D{
+    background: purple;
+    border-radius: 0px 100px 100px 0px; 
+}
+.petals2{
+    transform: rotate(-45deg);
+
+}
+.petals3{
+    transform: rotate(45deg);
+}
+.petals6{
+    transform: rotate(45deg);
+}
+.petals7{
+    transform: rotate(-45deg);
+}
+.petals1{
+    /* border: solid yellow; */
+    transform: translate(300px, -25px)
+}
+.petals8{
+    /* border: solid yellow; */
+    transform: translate(-300px, 25px)
+}
+.petals4{
+    /* border: solid purple; */
+    transform: translate(-175px, 100px);
+}
+.petals5{
+    /* border: solid purple; */
+    transform: translate(175px, -100px);
+}
+
+/* ==============second layer =============== */
+/* ========================================== */
+/* ========================================== */
+/* ========================================== */
+/* ========================================== */
+
+
+.outterLayer1Medium{ 
+    margin-top: 365px;
+    margin-left: 200px;
+    height: 300px;
+    width: 600px;
+    position: absolute;
+    z-index: 4;
+    display: flex;
+    flex-direction: column;
+}
+.boxMedium{
+display: flex;
+height: 150px;
+width: 600px;
+position: relative;
+}
+.petalsMedium{
+display: flex;
+flex-direction: column;
+height: 150px;
+width: 150px;
+position: relative;
+}
+.petalsMoving1Medium{
+    z-index: 5;
+}
+.petalsMoving2Medium{
+    z-index: 6;
+}
+.petalsBoxMedium{
+height: 150px;
+width: 150px;
+display: flex;
+}
+.piecesMedium{
+height: 75px; 
+width: 75px;
+}
+.curveNMedium{
+    background: yellow;
+    border-radius: 75px 75px 0px 0px;
+}
+.curveUMedium{
+    background: yellow;
+    border-radius: 0px 0px 75px 75px;
+}
+.curveVAMedium{
+    margin: 0;
+    display: flex;
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-top: 75px solid yellow;
+}
+.curveVBMedium{
+    margin: 0;
+    display: flex;
+    width: 0;
+    height: 0;
+    border-right: 75px solid transparent;
+    border-top: 75px solid yellow;
+}
+.curveTAMedium{
+    margin: 0;
+    display: flex;
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-bottom: 75px solid yellow;
+}
+.curveTBMedium{
+    margin: 0;
+    display: flex;
+    width: 0;
+    height: 0;
+    border-right: 75px solid transparent;
+    border-bottom: 75px solid yellow;
+}
+.pieces5AMedium{
+    background: yellow;
+    border-radius: 75px 0px 0px 75px;
+}
+.pieces5BMedium{
+    margin: 0;
+    display: flex;
+    width: 0;
+    height: 0;
+    border-right: 75px solid transparent;
+    border-bottom: 75px solid yellow;  
+}
+.pieces5CMedium{
+    background: yellow;
+    border-radius: 75px 0px 0px 75px;
+}
+.pieces5DMedium{
+    margin: 0;
+    display: flex;
+    width: 0;
+    height: 0;
+    border-right: 75px solid transparent;
+    border-top: 75px solid yellow; 
+}
+.pieces4AMedium{
+    margin: 0;
+    display: flex;
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-bottom: 75px solid yellow; 
+}
+.pieces4BMedium{
+    background: yellow;
+    border-radius: 0px 75px 75px 0px;  
+}
+.pieces4CMedium{
+    margin: 0;
+    display: flex;
+    width: 0;
+    height: 0;
+    border-left: 75px solid transparent;
+    border-top: 75px solid yellow; 
+}
+.pieces4DMedium{
+    background: yellow;
+    border-radius: 0px 75px 75px 0px; 
+}
+.petals2Medium{
+    transform: rotate(-45deg);
+}
+.petals3Medium{
+    transform: rotate(45deg);
+}
+.petals6Medium{
+    transform: rotate(45deg);
+}
+.petals7Medium{
+    transform: rotate(-45deg);
+}
+.petals1Medium{
+    
+    transform: translate(225px, -18px)
+}
+.petals8Medium{
+    
+    transform: translate(-225px, 18px)
+}
+.petals4Medium{
+   
+    transform: translate(-130px, 75px);
+}
+.petals5Medium{
+
+    transform: translate(130px, -75px);
+} 
+
+/* ==============third layer =============== */
+/* ========================================== */
+/* ========================================== */
+/* ========================================== */
+/* ========================================== */
+
+.outterLayer1Small{ 
+    margin-top: 425px;
+    margin-left: 300px;
+    height: 200px;
+    width: 400px;
+    position: absolute;
+    z-index: 8;
+    display: flex;
+    flex-direction: column;
+}
+.boxSmall{
+display: flex;
+height: 100px;
+width: 400px;
+position: relative;
+}
+.petalsSmall{
+display: flex;
+flex-direction: column;
+height: 100px;
+width: 100px;
+position: relative;
+}
+.petalsMoving1Small{
+    z-index: 9;
+}
+.petalsMoving2Small{
+    z-index: 10;
+}
+.petalsBoxSmall{
+height: 100px;
+width: 100px;
+display: flex;
+}
+.piecesSmall{
+height: 50px; 
+width: 50px;
+}
+.curveNSmall{
+    background: rgb(214, 118, 214);
+    border-radius: 50px 50px 0px 0px;
+}
+.curveUSmall{
+    background: rgb(214, 118, 214);
+    border-radius: 0px 0px 50px 50px;
+}
+.curveVASmall{
+    margin: 0;
+    display: flex;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-top: 50px solid rgb(214, 118, 214);
+}
+.curveVBSmall{
+    margin: 0;
+    display: flex;
+    width: 0;
+    height: 0;
+    border-right: 50px solid transparent;
+    border-top: 50px solid rgb(214, 118, 214);
+}
+.curveTASmall{
+    margin: 0;
+    display: flex;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-bottom: 50px solid rgb(214, 118, 214);
+}
+.curveTBSmall{
+    margin: 0;
+    display: flex;
+    width: 0;
+    height: 0;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid rgb(214, 118, 214);
+}
+.pieces5ASmall{
+    background: rgb(214, 118, 214);
+    border-radius: 50px 0px 0px 50px;
+}
+.pieces5BSmall{
+    margin: 0;
+    display: flex;
+    width: 0;
+    height: 0;
+    border-right: 50px solid transparent;
+    border-bottom: 50px solid rgb(214, 118, 214);  
+}
+.pieces5CSmall{
+    background: rgb(214, 118, 214);
+    border-radius: 50px 0px 0px 50px;
+}
+.pieces5DSmall{
+    margin: 0;
+    display: flex;
+    width: 0;
+    height: 0;
+    border-right: 50px solid transparent;
+    border-top: 50px solid rgb(214, 118, 214); 
+}
+.pieces4ASmall{
+    margin: 0;
+    display: flex;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-bottom: 50px solid rgb(214, 118, 214); 
+}
+.pieces4BSmall{
+    background: rgb(214, 118, 214);
+    border-radius: 0px 50px 50px 0px;  
+}
+.pieces4CSmall{
+    margin: 0;
+    display: flex;
+    width: 0;
+    height: 0;
+    border-left: 50px solid transparent;
+    border-top: 50px solid rgb(214, 118, 214); 
+}
+.pieces4DSmall{
+    background: rgb(214, 118, 214);
+    border-radius: 0px 50px 50px 0px; 
+}
+.petals2Small{
+    transform: rotate(-45deg);
+}
+.petals3Small{
+    transform: rotate(45deg);
+}
+.petals6Small{
+    transform: rotate(45deg);
+}
+.petals7Small{
+    transform: rotate(-45deg);
+}
+.petals1Small{
+    /* border: solid yellow; */
+    transform: translate(150px, -12px);
+}
+.petals8Small{
+    /* border: solid yellow; */
+    transform: translate(-150px, 12px);
+}
+.petals4Small{
+    /* border: solid purple; */
+    transform: translate(-87px, 50px);
+}
+.petals5Small{
+    /* border: solid purple; */
+    transform: translate(87px, -50px);
+}
+
+.flowersCircle{
+    height: 100px;
+    width: 100px; 
+    background: black;
+    border-radius: 50%;
+    position: relative;
+    z-index: 10;
+    transform: translate(450px, 450px);
+}
+/* =============================== */
+/* =============================== */
+/* =============================== */
+/* ====== start of movements ===== */
+.cover:hover
+.petals1{
+    animation: p1l 4s infinite;
+}
+.cover:hover
+.petals1Medium{
+    animation: p1m 4s infinite;
+}
+.cover:hover
+.petals1Small{
+    animation: p1s 4s infinite;
+}
+
+@keyframes p1l{
+    25%{transform: translate(300px, -200px);
+        animation: duration 4s;
+}}
+@keyframes p1m{
+    25%{transform: translate(225px, -400px);
+        animation: duration 4s;
+}}
+@keyframes p1s{
+25%{transform: translate(150px, -550px);
+    animation: duration 4s;
+}} 
+
+
+.cover:hover
+.petals2{
+    animation: p2l 4s infinite;
+}
+.cover:hover
+.petals2Medium{
+    animation: p2m 4s infinite;
+}
+.cover:hover
+.petals2Small{
+    animation: p2s 4s infinite;
+}
+@keyframes p2l{
+    25%{transform: rotate(-45deg) translate(-20px, -200px);
+        animation: duration 4s;
+}}
+@keyframes p2m{
+    25%{transform: rotate(-45deg) translate(-20px, -400px);
+        animation: duration 4s;
+}}
+@keyframes p2s{
+25%{transform: rotate(-45deg) translate(-20px, -550px);
+    animation: duration 4s;
+}} 
+
+.cover:hover
+.petals3{
+    animation: p3l 4s infinite;
+}
+.cover:hover
+.petals3Medium{
+    animation: p3m 4s infinite;
+}
+.cover:hover
+.petals3Small{
+    animation: p3s 4s infinite;
+}
+
+@keyframes p3l{
+    25%{transform: rotate(45deg) translate(-20px, -200px);
+        animation: duration 4s;
+}}
+@keyframes p3m{
+    25%{transform: rotate(45deg) translate(-20px, -400px);
+        animation: duration 4s;
+}}
+@keyframes p3s{
+25%{transform: rotate(45deg) translate(-20px, -550px);
+    animation: duration 4s;
+}}
+.cover:hover
+.petals4{
+    animation: p4l 4s infinite;
+}
+.cover:hover
+.petals4Medium{
+    animation: p4m 4s infinite;
+}
+.cover:hover
+.petals4Small{
+    animation: p4s 4s infinite;
+}
+@keyframes p4l{
+    25%{transform: translate(100px, 100px);
+        animation: duration 4s;
+}}
+@keyframes p4m{
+    25%{transform: translate(300px, 75px);
+        animation: duration 4s;
+}}
+@keyframes p4s{
+25%{transform: translate(450px, 50px);
+    animation: duration 4s;
+}} 
+.cover:hover
+.petals5{
+    animation: p5l 4s infinite;
+}
+.cover:hover
+.petals5Medium{
+    animation: p5m 4s infinite;
+}
+.cover:hover
+.petals5Small{
+    animation: p5s 4s infinite;
+}
+@keyframes p5l{
+    25%{transform: translate(-100px, -100px);
+        animation: duration 4s;
+}}
+@keyframes p5m{
+    25%{transform: translate(-300px, -75px);
+        animation: duration 4s;
+}}
+@keyframes p5s{
+25%{transform: translate(-450px, -50px);
+    animation: duration 4s;
+}} 
+.cover:hover
+.petals6{
+    animation: p6l 4s infinite;
+}
+.cover:hover
+.petals6Medium{
+    animation: p6m 4s infinite;
+}
+.cover:hover
+.petals6Small{
+    animation: p6s 4s infinite;
+}
+@keyframes p6l{
+    25%{transform: rotate(45deg) translate(20px, 200px);
+        animation: duration 4s;
+}}
+@keyframes p6m{
+    25%{transform: rotate(45deg) translate(20px, 400px);
+        animation: duration 4s;
+}}
+@keyframes p6s{
+25%{transform: rotate(45deg) translate(20px, 550px);
+    animation: duration 4s;
+}} 
+
+.cover:hover
+.petals7{
+    animation: p7l 4s infinite;
+}
+.cover:hover
+.petals7Medium{
+    animation: p7m 4s infinite;
+}
+.cover:hover
+.petals7Small{
+    animation: p7s 4s infinite;
+}
+@keyframes p7l{
+    25%{transform: rotate(-45deg) translate(20px, 200px);
+        animation: duration 4s;
+}}
+@keyframes p7m{
+    25%{transform: rotate(-45deg) translate(20px, 400px);
+        animation: duration 4s;
+}}
+@keyframes p7s{
+25%{transform: rotate(-45deg) translate(20px, 550px);
+    animation: duration 4s;
+}} 
+
+.cover:hover
+.petals8{
+    animation: p8l 4s infinite;
+}
+.cover:hover
+.petals8Medium{
+    animation: p8m 4s infinite;
+}
+.cover:hover
+.petals8Small{
+    animation: p8s 4s infinite;
+}
+@keyframes p8l{
+    25%{transform: translate(-300px, 200px);
+        animation: duration 4s;
+}}
+@keyframes p8m{
+    25%{transform: translate(-225px, 400px);
+        animation: duration 4s;
+}}
+@keyframes p8s{
+25%{transform: translate(-150px, 550px);
+    animation: duration 4s;
+}} 
+
+.cover:hover
+.flowersCircle{
+    animation: fC1 4s infinite;
+}
+@keyframes fC1{
+5%{
+    transform: translate(450px, 450px) scale(3, 3);
+    animation: duration 8s;
+}
+25%{
+    transform: translate(450px, 450px) scale(0, 0);
+    animation: duration 10s;  
+}
+/* 50%{
+    transform: translate(450px, 450px) scale(0, 0);
+    animation: duration 4s;    
+}*/
+95%{
+    transform: translate(450px, 450px) scale(0, 0);
+    animation: duration 4s;  
+} 
+}
